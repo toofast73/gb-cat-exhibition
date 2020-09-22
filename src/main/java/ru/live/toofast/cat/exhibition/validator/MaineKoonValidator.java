@@ -10,7 +10,7 @@ public class MaineKoonValidator implements CatValidator {
     @Override
     public Boolean tryCertify(Cat cat) {
         if(cat.getBreed() == null){
-            return false;
+            return true;
         }
 
         switch (cat.getBreed()){
